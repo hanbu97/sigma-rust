@@ -44,9 +44,8 @@ mod tests {
     use std::convert::{TryFrom, TryInto};
     use std::rc::Rc;
 
-    use ergo_chain_types::BlockId;
+    use ergo_chain_types::{BlockId, votes::Votes};
     use ergotree_ir::{
-        chain::votes::Votes,
         mir::{expr::Expr, property_call::PropertyCall},
         sigma_protocol::dlog_group::EcPoint,
         types::{scontext, smethod::SMethod, spreheader},

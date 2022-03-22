@@ -4,7 +4,7 @@ use ergo_chain_types::BlockId;
 
 use crate::sigma_protocol::dlog_group;
 
-use super::votes::Votes;
+use ergo_chain_types::votes::Votes;
 
 /// Block header with the current `spendingTransaction`, that can be predicted
 /// by a miner before it's formation

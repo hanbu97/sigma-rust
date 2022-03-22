@@ -14,7 +14,7 @@ use crate::serialization::sigma_byte_writer::SigmaByteWriter;
 use crate::sigma_protocol::dlog_group::{self, EcPoint};
 
 use super::preheader::PreHeader;
-use super::votes::Votes;
+use ergo_chain_types::votes::Votes;
 
 /// Represents data of the block header available in Sigma propositions.
 #[cfg_attr(feature = "json", derive(serde::Serialize, serde::Deserialize))]

@@ -11,12 +11,11 @@ use ergo_lib::{
     ergo_chain_types::{BlockId, Digest32},
 };
 use ergo_lib::{
-    ergo_chain_types::blake2b256_hash,
+    ergo_chain_types::{blake2b256_hash, votes::Votes},
     ergotree_ir::{
         chain::{
             ergo_box::{box_value::BoxValue, BoxId},
             header::{AutolykosSolution, Header},
-            votes::Votes,
         },
         ergo_tree::ErgoTree,
         serialization::{sigma_byte_writer::SigmaByteWriter, SigmaSerializable},

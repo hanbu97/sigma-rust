@@ -7,15 +7,12 @@
 #[allow(clippy::unwrap_used)]
 #[cfg(test)]
 mod tests {
-    use ergo_lib::ergo_chain_types::{blake2b256_hash, ADDigest, BlockId, Digest32};
+    use ergo_lib::ergo_chain_types::{blake2b256_hash, votes::Votes, ADDigest, BlockId, Digest32};
     use ergo_nipopow::{NipopowAlgos, NipopowProof};
 
     use ergo_lib::ergotree_interpreter::sigma_protocol::private_input::DlogProverInput;
     use ergo_lib::ergotree_ir::{
-        chain::{
-            header::{AutolykosSolution, Header},
-            votes::Votes,
-        },
+        chain::header::{AutolykosSolution, Header},
         serialization::sigma_byte_writer::SigmaByteWriter,
         sigma_protocol::dlog_group::{order, EcPoint},
     };
