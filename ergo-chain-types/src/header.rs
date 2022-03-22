@@ -1,15 +1,4 @@
-use crate::{ADDigest, BlockId, Digest32};
-
-use ergotree_ir::{
-    chain::{
-        ergo_box::{box_value::BoxValue, BoxId},
-        header::{AutolykosSolution, Header},
-        votes::Votes,
-    },
-    ergo_tree::ErgoTree,
-    serialization::{sigma_byte_writer::SigmaByteWriter, SigmaSerializable},
-    sigma_protocol::dlog_group::{order, EcPoint},
-};
+use crate::{ADDigest, BlockId, Digest32, votes::Votes};
 
 /// Represents data of the block header available in Sigma propositions.
 #[cfg_attr(feature = "json", derive(serde::Serialize, serde::Deserialize))]
